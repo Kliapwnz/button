@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 function App() {
-    const myFirstSubscriber = () => {
+    const myFirstSubscriber = (event:React.MouseEvent<HTMLButtonElement>) => {
         console.log("Hello Im Kevin"!)
     }
     const mySecondSubscriber = () => {
