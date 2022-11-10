@@ -4,8 +4,8 @@ import {Button} from "./components/Button";
 
 
 function App() {
-    const Button1Foo = (subscriber:string) => {
-        console.log(subscriber)
+    const Button1Foo = (subscriber:string,age:number) => {
+        console.log(subscriber,age)
     }
     const Button2Foo = (subscriber:string) => {
         console.log(subscriber)
@@ -14,7 +14,7 @@ function App() {
 
     return (
         <div className="App">
-            <Button name={"MyYouTubeChanel-1"} callBack={()=>Button1Foo("Im Kevin")} />
+            <Button name={"MyYouTubeChanel-1"} callBack={()=>Button1Foo("Im Kevin",21)} />
             <Button name={"MyYouTubeChanel-2"} callBack={()=>Button2Foo("Im Ivan")}/>
 
         </div>
