@@ -1,5 +1,6 @@
 import React, {MouseEvent} from 'react';
 import './App.css';
+import {Button} from "./components/Button";
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
 
     return (
         <div className="App">
-            <button>MyYouTubeChanel-1</button>
+            <Button/>
             <button>MyYouTubeChanel-2</button>
         </div>
     );
