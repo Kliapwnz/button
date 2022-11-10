@@ -15,7 +15,8 @@ function App() {
         console.log(100200)
 
     }
-    const foo2 = () => {
+    const foo2 = (name: string) => {
+        console.log(name)
 
     }
 
@@ -29,9 +30,10 @@ function App() {
             {/*<button onClick={(event:MouseEvent<HTMLButtonElement>)=>onClickHandler("kevin")}> MyYouTubeChanel-1</button>*/}
             {/*<button onClick={(event:MouseEvent<HTMLButtonElement>)=>onClickHandler("Ivan")}> MyYouTubeChanel-2</button>*/}
             <button onClick={foo1}>1</button>
-            <button>2</button>
+            <button onClick={(event:MouseEvent<HTMLButtonElement>)=>foo2("100200")}>2</button>
 
         </div>
     );
 }
+
 export default App;
