@@ -2,11 +2,12 @@ import React from "react";
 
 type nameTypeProps = {
     name: string
+    callBack:()=>void
 }
 
 export const Button = (props: nameTypeProps) => {
     const onClickHandler = () => {
-        console.log("Im Kevin")
+        props.callBack()
     }
     return (
         <>
