@@ -10,6 +10,7 @@ function App() {
         <div className="App">
             <Button name={"MyYouTubeChanel-1"}/>
             <Button name={"MyYouTubeChanel-2"}/>
+            <Button name={"Delete"}/>
 
         </div>
     );
