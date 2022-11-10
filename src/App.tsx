@@ -4,13 +4,18 @@ import {Button} from "./components/Button";
 
 
 function App() {
+    const Button1Foo = () => {
+
+    }
+    const Button2Foo = () => {
+
+    }
 
 
     return (
         <div className="App">
-            <Button name={"MyYouTubeChanel-1"}/>
-            <Button name={"MyYouTubeChanel-2"}/>
-            <Button name={"Delete"}/>
+            <Button name={"MyYouTubeChanel-1"} callBack={Button1Foo}/>
+            <Button name={"MyYouTubeChanel-2"} callBack={Button2Foo}/>
 
         </div>
     );
