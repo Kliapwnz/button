@@ -5,10 +5,10 @@ import {Button} from "./components/Button";
 
 function App() {
     const Button1Foo = () => {
-
+        console.log("Im Kevin")
     }
     const Button2Foo = () => {
-
+        console.log("Im Ivan")
     }
 
 
