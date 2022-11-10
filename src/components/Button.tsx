@@ -6,7 +6,7 @@ type nameTypeProps = {
 
 export const Button = (props: nameTypeProps) => {
     const onClickHandler = () => {
-
+        console.log("Im Kevin")
     }
     return (
         <>
