@@ -1,8 +1,12 @@
 import React from "react";
 
-export const Button = () => {
+type nameTypeProps={
+    name: string
+}
+
+export const Button = (props:nameTypeProps) => {
     return (<>
-            <button>MyYouTubeChanel-1</button>
+            <button>{props.name}</button>
         </>
     )
 }

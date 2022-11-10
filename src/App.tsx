@@ -8,8 +8,8 @@ function App() {
 
     return (
         <div className="App">
-            <Button/>
-            <Button/>
+            <Button name={"MyYouTubeChanel-1"}/>
+            <Button name={"MyYouTubeChanel-2"}/>
 
         </div>
     );
