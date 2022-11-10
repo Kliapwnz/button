@@ -15,7 +15,7 @@ function App() {
     return (
         <div className="App">
             <Button name={"MyYouTubeChanel-1"} callBack={()=>Button1Foo("Im Kevin")} />
-            <Button name={"MyYouTubeChanel-2"} callBack={()=>Button2Foo({subscriber: "Im Ivan"})}/>
+            <Button name={"MyYouTubeChanel-2"} callBack={()=>Button2Foo("Im Ivan")}/>
 
         </div>
     );
