@@ -9,16 +9,11 @@ function App() {
     // const mySecondSubscriber = (event:MouseEvent<HTMLButtonElement>) => {
     //     console.log("Hello Im Ivan"!)
     // }
-    // const onClickHandler = (name:string) => {
-    //     console.log(name)
-    const foo1 = (event: MouseEvent<HTMLButtonElement>) => {
-        console.log(100200)
-
+    const onClickHandler = (name:string) => {
+        console.log(name)
     }
-    const foo2 = (num: number) => {
-        console.log(num)
 
-    }
+
 
 
     return (
@@ -27,10 +22,8 @@ function App() {
             {/*    console.log("Hello"!)*/}
             {/*}}>MyYouTubeChanel-1*/}
             {/*</button>*/}
-            {/*<button onClick={(event:MouseEvent<HTMLButtonElement>)=>onClickHandler("kevin")}> MyYouTubeChanel-1</button>*/}
-            {/*<button onClick={(event:MouseEvent<HTMLButtonElement>)=>onClickHandler("Ivan")}> MyYouTubeChanel-2</button>*/}
-            <button onClick={foo1}>1</button>
-            <button onClick={(event:MouseEvent<HTMLButtonElement>)=>foo2(100200)}>2</button>
+            <button onClick={(event:MouseEvent<HTMLButtonElement>)=>onClickHandler("kevin")}> MyYouTubeChanel-1</button>
+            <button onClick={(event:MouseEvent<HTMLButtonElement>)=>onClickHandler("Ivan")}> MyYouTubeChanel-2</button>
 
         </div>
     );
