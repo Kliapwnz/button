@@ -16,9 +16,14 @@ function App() {
 
     return (
         <div className="App">
-            <Button name={"MyYouTubeChanel-1"} callBack={() => Button1Foo("Im Kevin", 21)}/>
-            <Button name={"MyYouTubeChanel-2"} callBack={() => Button2Foo("Im Ivan")}/>
-            <Button name={"Hello"} callBack={() => Button3Foo("Im Stupid Button")}/>
+            <input/>
+            <button>+</button>
+            <div>
+                <Button name={"MyYouTubeChanel-1"} callBack={() => Button1Foo("Im Kevin", 21)}/>
+                <Button name={"MyYouTubeChanel-2"} callBack={() => Button2Foo("Im Ivan")}/>
+                <Button name={"Hello"} callBack={() => Button3Foo("Im Stupid Button")}/>
+            </div>
+
         </div>
     );
 }
