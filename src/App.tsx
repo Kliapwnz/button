@@ -2,6 +2,8 @@ import React, {MouseEvent, useState} from 'react';
 import './App.css';
 import {Button} from "./components/Button";
 import {FullInput} from "./components/FullInput";
+import {ButtonForInput} from "./components/ButtonForInput";
+import {Input} from "./components/Input";
 
 
 function App() {
@@ -11,8 +13,8 @@ function App() {
         {message: "London is the capital of Great Britain"},
     ])
     const addMessage = (title: string) => {
-        let newMessage = {message:title}
-        setMessage([newMessage,...message])
+        let newMessage = {message: title}
+        setMessage([newMessage, ...message])
     }
     const Button1Foo = (subscriber: string, age: number) => {
         console.log(subscriber, age)
@@ -26,7 +28,9 @@ function App() {
 
     return (
         <div className="App">
-            <FullInput addMessage={addMessage}/>
+            {/*<FullInput addMessage={addMessage}/>*/}
+            <Input/>
+            <ButtonForInput/>
 
             <div>
                 {message.map((el, index) => {
