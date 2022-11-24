@@ -12,6 +12,9 @@ function App() {
         {message: "I try to win"},
         {message: "London is the capital of Great Britain"},
     ])
+
+    let [title, setTitle] = useState("")
+
     const addMessage = (title: string) => {
         let newMessage = {message: title}
         setMessage([newMessage, ...message])
@@ -29,7 +32,7 @@ function App() {
     return (
         <div className="App">
             {/*<FullInput addMessage={addMessage}/>*/}
-            <Input/>
+            <Input setTitle={setTitle} title={title}/>
             <ButtonForInput name={"+"} callBack={()=>{}}/>
 
             <div>
