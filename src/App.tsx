@@ -30,7 +30,7 @@ function App() {
         <div className="App">
             {/*<FullInput addMessage={addMessage}/>*/}
             <Input/>
-            <ButtonForInput/>
+            <ButtonForInput name={"+"} callBack={()=>{}}/>
 
             <div>
                 {message.map((el, index) => {
