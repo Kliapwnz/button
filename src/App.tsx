@@ -10,7 +10,9 @@ function App() {
         {message: "I try to win"},
         {message: "London is the capital of Great Britain"},
     ])
-
+const addMessage = (title:string) => {
+    console.log("aaaaaaa")
+}
     const Button1Foo = (subscriber: string, age: number) => {
         console.log(subscriber, age)
     }
@@ -23,7 +25,7 @@ function App() {
 
     return (
         <div className="App">
-            <FullInput/>
+            <FullInput addMessage={addMessage}/>
 
             <div>
                 {message.map((el,index)=>{
