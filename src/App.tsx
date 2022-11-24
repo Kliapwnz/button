@@ -1,6 +1,7 @@
 import React, {MouseEvent, useState} from 'react';
 import './App.css';
 import {Button} from "./components/Button";
+import {FullInput} from "./components/FullInput";
 
 
 function App() {
@@ -22,8 +23,8 @@ function App() {
 
     return (
         <div className="App">
-            <input/>
-            <button>+</button>
+            <FullInput/>
+
             <div>
                 {message.map((el,index)=>{
                     return(
