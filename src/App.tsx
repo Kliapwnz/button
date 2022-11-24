@@ -28,12 +28,15 @@ function App() {
     const Button3Foo = (subscriber: string) => {
         console.log(subscriber)
     }
-
+    const callBackButtonHandler = () => {
+        addMessage(title)
+        setTitle("")
+    }
     return (
         <div className="App">
             {/*<FullInput addMessage={addMessage}/>*/}
             <Input setTitle={setTitle} title={title}/>
-            <ButtonForInput name={"+"} callBack={()=>{}}/>
+            <ButtonForInput name={"+"} callBack={callBackButtonHandler}/>
 
             <div>
                 {message.map((el, index) => {
