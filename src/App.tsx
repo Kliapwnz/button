@@ -1,9 +1,15 @@
-import React, {MouseEvent} from 'react';
+import React, {MouseEvent, useState} from 'react';
 import './App.css';
 import {Button} from "./components/Button";
 
 
 function App() {
+    let [message, setMessage] = useState([
+        {message: "Hello all"},
+        {message: "I try to win"},
+        {message: "London is the capital of Great Britain"},
+    ])
+
     const Button1Foo = (subscriber: string, age: number) => {
         console.log(subscriber, age)
     }
@@ -18,6 +24,14 @@ function App() {
         <div className="App">
             <input/>
             <button>+</button>
+            <div>
+                {message.map((el,index)=>{
+                    return(
+                        <div key={index}>{el.message}</div>
+                    )
+                })}
+            </div>
+
             <div>
                 <Button name={"MyYouTubeChanel-1"} callBack={() => Button1Foo("Im Kevin", 21)}/>
                 <Button name={"MyYouTubeChanel-2"} callBack={() => Button2Foo("Im Ivan")}/>
