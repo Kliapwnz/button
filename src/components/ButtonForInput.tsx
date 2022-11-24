@@ -10,7 +10,7 @@ export const ButtonForInput = (props:ButtonPropsType) => {
     props.callBack()
     }
     return (
-        <button onClick={onClickButtonHandler}>+</button>
+        <button onClick={onClickButtonHandler}>{props.name}</button>
     );
 };
 
