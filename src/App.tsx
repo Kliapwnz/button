@@ -11,7 +11,7 @@ function App() {
         {message: "London is the capital of Great Britain"},
     ])
     const addMessage = (title: string) => {
-        let newMessage = {message: "Gosteva Natali"}
+        let newMessage = {message:title}
         setMessage([newMessage,...message])
     }
     const Button1Foo = (subscriber: string, age: number) => {
